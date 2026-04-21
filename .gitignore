@@ -1,16 +1,19 @@
-# Compiled class file
+
+# Java / Spring Boot 기본
 *.class
-
-# Log file
 *.log
-
-# BlueJ files
 *.ctxt
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+# 빌드 결과물
+build/
+out/
+bin/
 
-# Package Files #
+# Gradle
+.gradle
+!gradle/wrapper/gradle-wrapper.jar
+
+# 패키지 파일
 *.jar
 *.war
 *.nar
@@ -19,6 +22,45 @@
 *.tar.gz
 *.rar
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+# JVM Crash Logs
 hs_err_pid*
 replay_pid*
+
+### IntelliJ IDEA ###
+.idea/
+*.iws
+*.iml
+*.ipr
+
+### Eclipse / STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
+
+# 기타
+HELP.md
+
+# 환경변수 관리
+.env
+
+# 예외 (빌드 폴더 중 필요한 것만 포함)
+!**/src/main/**/build/
+!**/src/test/**/build/
+!**/src/main/**/out/
+!**/src/test/**/out/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
